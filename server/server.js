@@ -66,6 +66,10 @@ app.get('/', (req, res) => res.send("API working fine ✅"));
 app.use('/api/auth', authRouter);
 app.use('/api/user', userRouter);
 
+app.get("/api/status", (req, res) => {
+  res.send("✅ Server is live and responding");
+});
+
 // ✅ Start server only in development
 if (process.env.NODE_ENV !== "production") {
   app.listen(port, () => console.log(`Server started on port: ${port}`));
