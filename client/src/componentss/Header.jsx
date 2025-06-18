@@ -37,9 +37,7 @@ const Header = () => {
         the code flow! 🚀
       </p>
 
-      <button className="border border-gray-500 rounded-full px-8 py-2.5 hover:bg-gray-100 transition-all">
-        Get Started
-      </button>
+      
     </div>
   );
 };
